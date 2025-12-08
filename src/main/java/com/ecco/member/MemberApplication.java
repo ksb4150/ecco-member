@@ -1,4 +1,4 @@
-package com.ecco.member.member;
+package com.ecco.member;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

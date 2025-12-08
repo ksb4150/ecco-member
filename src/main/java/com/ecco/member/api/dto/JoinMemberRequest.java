@@ -1,4 +1,4 @@
-package com.ecco.member.member.api.dto;
+package com.ecco.member.api.dto;
 public class JoinMemberRequest {
     private String email;
     private String name;

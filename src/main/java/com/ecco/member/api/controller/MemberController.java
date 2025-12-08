@@ -1,8 +1,8 @@
-package com.ecco.member.member.api.controller;
+package com.ecco.member.api.controller;
 
-import com.ecco.member.member.api.dto.JoinMemberRequest;
-import com.ecco.member.member.api.dto.MemberResponse;
-import com.ecco.member.member.api.service.MemberService;
+import com.ecco.member.api.dto.MemberResponse;
+import com.ecco.member.api.service.MemberService;
+import com.ecco.member.api.dto.JoinMemberRequest;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

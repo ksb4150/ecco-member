@@ -1,4 +1,4 @@
-package com.ecco.member.member.api.dto;
+package com.ecco.member.api.dto;
 
 public class MemberResponse {
     private Long id;

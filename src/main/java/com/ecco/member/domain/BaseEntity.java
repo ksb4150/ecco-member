@@ -1,4 +1,4 @@
-package com.ecco.member.member.domain;
+package com.ecco.member.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
