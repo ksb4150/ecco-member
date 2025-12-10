@@ -4,6 +4,7 @@ import com.ecco.member.api.dto.JoinMemberRequest;
 import com.ecco.member.api.dto.MemberResponse;
 import com.ecco.member.api.repository.MemberRepository;
 import com.ecco.member.domain.Member;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -36,7 +37,7 @@ public class MemberService {
 
     public MemberResponse getMember(Long memberId) {
         Member member = memberRepository.findById(memberId)
-            .orElseThrow(() -> new IllegalArgumentException("해당 ID의 회원을 찾을 수 없습니다."));
+            .orElseThrow(() -> new EntityNotFoundException("해당 ID의 회원을 찾을 수 없습니다."));
         return new MemberResponse(
             member.getId(),
             member.getEmail(),
